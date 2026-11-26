@@ -31,7 +31,7 @@ kind: ClusterRole
 metadata:
   name: expense-trainee
 rules:
-- apiGroups: ["*"]
+- apiGroups: ["*"]  #( ["*"] means all api groups, empty bracket [""] means only v1 apigroups )
   resources: ["nodes", "persistentvolumes", "componentstatuses", "priorityclasses"]
   verbs: ["get", "watch", "list"]
 ---
