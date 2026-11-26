@@ -32,7 +32,7 @@ metadata:
   name: expense-trainee
 rules:
 - apiGroups: [""]
-  resources: ["nodes", "persistentvolumes"]
+  resources: ["nodes", "persistentvolumes", "priorityclasses"]
   verbs: ["get", "watch", "list"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
