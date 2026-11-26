@@ -31,8 +31,8 @@ kind: ClusterRole
 metadata:
   name: expense-trainee
 rules:
-- apiGroups: [""]
-  resources: ["nodes", "persistentvolumes", "componentstatuses"]
+- apiGroups: ["*"]
+  resources: ["nodes", "persistentvolumes", "componentstatuses", "priorityclasses"]
   verbs: ["get", "watch", "list"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
